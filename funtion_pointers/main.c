@@ -31,6 +31,6 @@ function(sum, 5, 10);
 typedef_fnptr();
 
 fn_ptr2();
-
-    return 0;
+    
+return 0;
 }

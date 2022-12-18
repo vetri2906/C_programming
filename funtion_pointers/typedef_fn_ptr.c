@@ -37,6 +37,7 @@ int typedef_fnptr(void) {
 
 
 
+
 // C program for the above approach
 #include <stdio.h>
  
@@ -116,17 +117,6 @@ int fn_ptr2()
 
     int (*(*p[1])())(int*) = { u };
  
-//to explain the above line - (*p[1])() is a fn pointer which has function pointer as
-// return type. Now the top layer fn pointer - (*(*p[1])())(int*) has int as return type
 
     printf("%d", (*p[0]())(&a));
 }
-
-
-
-
-
-
-
-
-
