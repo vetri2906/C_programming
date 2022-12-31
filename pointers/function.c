@@ -7,5 +7,3 @@ int * change (int *b)
     printf("value inside fn %d\n", *b);
     return b;
 }
-
-
