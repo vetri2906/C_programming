@@ -8,7 +8,6 @@ typedef struct
   char*z;
 } Student_t;
 
-
 typedef struct
 {
   float x;
@@ -28,7 +27,7 @@ student.y = 70;
 student.z = "string";
 // employee = test;	// "incompatible type"
 // but this is not in the specs and therefore the behaviour depends on the compiler
-Employee_t *employee1 = (Employee_t*) &student;
+Employee_t *employee1 = (Employee_t*)&student;
 // employee1 is a pointer variable of type Employee_t. Employee_t has two elements.
 // But even though Employee_t has two elements, It can hold address of Student_t type variable that 
 // has three elements
