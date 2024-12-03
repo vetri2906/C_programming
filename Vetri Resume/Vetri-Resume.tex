@@ -1,0 +1,107 @@
+\documentclass[]{Vetri-Resume}
+\fullname{Vetrivel}
+ \jobtitle{Embedded Sofware Engineer}
+
+\begin{document}
+\resumeheader
+{\email{vetri290696@gmail.com}}
+{\linkedin{bit.ly/3NuSjzv}}
+{\github{https://github.com/vetri2906}}
+{\phone{+91 8973048450}}
+{\address{Perungudi, Chennai}}
+{\nationality{India}}
+
+\begin{section}{Summary}
+{Embedded Software Engineer with 1.10 years of software development experience in C, Device driver development, and good domain knowledge in bare metal system bring-up platform as well as application development. Passionate to become an electronic product developer with a deep curiosity to learn new technologies and tools.}
+\end{section}
+
+\begin{section}{Work Experience}
+    \begin{subsection}{LCS Controls Pvt. Ltd.}{Embedded Software Engineer}{08/2021 – Present}{Chennai, Tamilnadu}
+        \item Convert business requirements into functional specifications and develop code independently.
+         \item Development of Software for "Check Weigher".
+        \item Development of Software for "Medical drug measurement weight scale".
+        \item  Development of HMI graphical layer for "On board weighing (Touch display)".
+    \end{subsection}
+\end{section}
+
+\sectiontable{Technical skills}{
+    \entry{Programming Languages}{C}
+    \entry{Peripherals}{DMA, Quadspi, CAN, I2C, SPI, UART, GPIO, Timers}
+    \entry{Hardware Base}{STM32f746, STM32f105, 8051, PIC18f, NXP – LPC2368.}
+    \entry{Software Tools}{Hercules serial monitor, CAN Analyzer, Logic analyzer, GCC debugger, Make file, STM Cube programmer, MPlab IPE, STM Cube MX.}
+    \entry{Hardware Tools}{Multimeter, Logic analyzer, CAN Analyzer, TTL converter, Bafo converter}
+    \entry{IDE}{Keil, MPlab, STMCube IDE, Code blocks, VS code, Arduino IDE, GNU Make }
+    \entry{VCS}{Git.} 
+    \entry{Host OS}{Windows, Ubuntu}
+    \entry{Miscellaneous}{Libre office, MS office}
+}
+
+\begin{section}{Professional Projects}
+\begin{subsection}{Fire Detector}{STM32U585, Azure RTOS, Embedded c, Keil, ARMCLang}{Emcus Technologies, Bangalore, India}{August 2023}
+    \item{Developed Octo-spi driver to read MT25 micronix flash.}
+    \item{Bootloader - internal flash Apis.}
+    \item{pyserial framework to send bin through com port.}
+    \item{srec tool to append CRC to bin file.}
+    \item{Daeveloped internal RTC drivers along with DST functionalities.}
+
+\end{subsection}
+
+
+
+\begin{subsection}{Check Weigher}{STM32f746, state machines approach, Embedded c, Bare metal, GCC}{LCS controls, Chennai, India}{June 2023}
+    \item{Implemented a simple task scheduler.}
+    \item{Developed LLD and HAL for qspi to read and write external non volatile memory through qspi.}
+    \item{Configured DMA peripheral to transfer external ADC data from SPI to SRAM.}
+\end{subsection}
+\begin{subsection}{Medical drug measurement weight scale}{STM32F105, state machines approach, Embedded c, GCC}{LCS controls, Chennai, India}{April, May 2023}
+    \item{Developed the whole project which includes – implementing Spi driver to read raw adc CS5532.}
+    \item{Implemented a simple task scheduler.}
+    \item{Developed application layer for calibrating raw adc and calculate weight.}
+    \item{Implemented architectural decisions on reading UART data.}
+\end{subsection}
+
+\begin{subsection}{On board weighing (Touch display)}{STM32f746, Embedded c, state machines approach, Bare metal, LVGL, GCC}{LCS controls, Chennai, India}{2022, 2023}
+     \item{Optimized project using function pointers. Worked on UART and CAN drivers to check diagnose the peripheral’s transmit and receive functionalities. 
+    \item Debugged and fixed hanging issue in the "On board weighing" project by tracing back from hard fault handler to the source of the error.
+    \item Design and develop HMI using open source LVGL layers. Create Screens, animations, Button press events, etc.}
+\end{subsection}
+
+\begin{subsection}{4 channel weight indicator }{NXP - LPC2368, Embedded c, Bare metal,}{LCS controls, Chennai, India}{2022}
+    \item{ Provided master/ slave device selection and make two devices function according to the selection - to process eight load cell data. 
+    \item Enabled print option only in master device.
+    \item Implemented reprint option (RS232 comm. printer).}
+\end{subsection}
+
+\begin{subsection}{Universal Testing Machine}{NXP - LPC2368, Embedded c, Bare metal}{LCS controls, Chennai, India}{2022}
+    \item{ Provided two reverse speed selection and displacement to switch speeds on specified 
+    displacements.
+    \item Changed extensometer enable/disable option through digital i/o.}
+\end{subsection}
+
+\begin{subsection}{BMI}{8051, Embedded c, Bare metal}{LCS controls, Chennai, India}{2022}
+    \item{ Implemented height measurement enable / disable and print only weight - when height is disabled.
+    \item Display only the weight in 7 segment LED when height is disabled. Disable coin collection - when no paper is available to print.}
+\end{subsection}
+
+\begin{subsection}{Trip Counter}{PIC18f, Bare metal, Embedded c}{LCS controls, Chennai, India}{2021}
+    \item{Enable menu option to print protocol through rs232 as per client requirement.}
+    \item{Change load default values and fixed junk value bug in protocol transmission.}
+    \item{Enabled new channel to read adc.}
+    \item{Read reference manual of the microcontroller and enabled external crystal configuration.}
+\end{subsection}
+\end{section}
+
+\begin{section}{Education}
+    \begin{subsection}{Bachelor of Engineering}{Electrical and Electronics Engineering}{Karpagam Institute of technology}{May 2019}
+        \italicitem{Project: Alcohol analyzing helmet to prevent accidents.}
+        \italicitem{Awards: Final year project was selected by TNSCST and funded to develop it.}
+    \end{subsection}
+\end{section}
+
+
+\begin{section}{References}
+{Roshan : 8667520349 (LCS Controls Pvt. Ltd.)}
+
+\end{section}
+
+\end{document}
