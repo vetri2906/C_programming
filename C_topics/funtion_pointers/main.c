@@ -1,36 +1,25 @@
 /******************************************************************************
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
-Code, Compile, Run and Debug online from anywhere in world.
+
 
 *******************************************************************************/
 #include <stdio.h>
-#include "typedef_fn_ptr.c"
+ 
 void sum (int a, int b)
 {
     int c = (a+b);
-    printf("%d\n",c);
+    printf("sum of a and b is : %d\n",c);
 }
-
-// parameters to the fn. pointer can be passed only during fn. call - which is below
+/*
+  parameters - fn.pointer, int, int
+*/
 int function (void (*fun_ptr)(int, int), int a, int b)
 {
-//Since parameters can be passed only here, int a and int b are declared above, so that - 
-// continued in main.
-   fun_ptr(a,b);
+   fun_ptr(a,b); // whatever fn address is passed as parameter will be called here.
 }
 
 int main()
 {
-    // so that sum of any two numbers can be performed.
-    // similarly subtraction of any two numbers can be done.
-function(sum, 5, 10);
-
-typedef_fnptr();
-
-fn_ptr2();
-    
-return 0;
+    function(sum, 5, 10);   // sum of any two numbers can be derived. similarly subtraction of any two numbers can be done.        
+    return 0;
 }

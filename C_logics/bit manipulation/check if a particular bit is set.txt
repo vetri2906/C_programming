@@ -1,0 +1,15 @@
+ How to check if a particular bit is set in C?
+
+#include <stdio.h>
+#include <stdint.h>
+int main()
+{
+ uint16_t number;
+ uint16_t bit_position;
+ 
+ printf("enter a number and bit position to check");
+ scanf("%d %d",&number, &bit_position);
+ printf("%d", (number &(bit_position<< 1)))
+
+return 0;
+}
